@@ -33,8 +33,8 @@ npm run dev
 
 ## Versi Node
 
-- **Node.js:** >= 20.0.0
-- **npm:** >= 10.0.0
+- **Node.js:** >= 20.0.0 (saya pakai v22.18.0)
+- **npm:** >= 10.0.0 (saya pakai 10.9.3)
 
 ## Keputusan Teknis
 
