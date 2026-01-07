@@ -1,0 +1,32 @@
+services:
+  # Development service
+  goodeva-frontend-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    container_name: goodeva-frontend-dev
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    profiles:
+      - dev
+
+  # Production service
+  goodeva-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    container_name: goodeva-frontend
+    ports:
+      - "80:80"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+    profiles:
+      - prod
