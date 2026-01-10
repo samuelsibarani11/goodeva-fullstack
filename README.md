@@ -12,7 +12,7 @@ docker compose down
 ```
 
 Buka browser:
-- Frontend: http://localhost:5173
+- Frontend: http://localhost:80
 - API: http://localhost:3000/api
 
 ### Tanpa Docker
